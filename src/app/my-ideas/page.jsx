@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import EditIdeaModal from "@/components/EditIdeaModal";
 import DeleteIdeaAlert from "@/components/DeleteIdeaAlert";
 import { Lightbulb, Tag } from "lucide-react";
-
+ 
 const MyIdeasPage = async () => {
   const session = await auth.api.getSession({ headers: await headers() });
   const { token } = await auth.api.getToken({ headers: await headers() });
