@@ -6,4 +6,4 @@ export default function Loading() {
       <span className="loading loading-spinner loading-lg   "></span>
     </div>
   );
-}    
+}     
