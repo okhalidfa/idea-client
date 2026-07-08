@@ -1,5 +1,5 @@
 import { PenLine, MessagesSquare, Rocket } from "lucide-react";
-
+  
 const steps = [
   {
     icon: PenLine,
