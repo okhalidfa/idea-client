@@ -7,7 +7,7 @@ export async function proxy(request) {
     headers: await headers(),
   });
 
-  if (!session) { 
+  if (!session) {
     const loginUrl = new URL("/login", request.url);
     loginUrl.searchParams.set("redirect", request.nextUrl.pathname);
     return NextResponse.redirect(loginUrl);
